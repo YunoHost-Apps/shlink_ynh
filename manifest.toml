@@ -36,8 +36,8 @@ ram.runtime = "50M"
 [resources]
     [resources.sources]
         [resources.sources.front]
-        url = "https://github.com/shlinkio/shlink-web-client/releases/download/v4.0.1/shlink-web-client_4.0.1_dist.zip"
-        sha256 = "c4b9943664dae05b92f228d3a20e42c417189f42bc90f2b723b6777926fca81c"
+        url = "https://github.com/shlinkio/shlink-web-client/releases/download/v4.1.0/shlink-web-client_4.1.0_dist.zip"
+        sha256 = "30a6c2d5d4ac8f7c1e743b8b82b9bc499cc41345bf64a449f20052cd3d89048a"
         autoupdate.strategy = "latest_github_release"
         autoupdate.upstream = "https://github.com/shlinkio/shlink-web-client"
         autoupdate.asset = "^shlink-web-client_.*_dist.zip$"
