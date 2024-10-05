@@ -5,7 +5,7 @@ name = "Shlink"
 description.en = "Self-hosted URL shortener"
 description.fr = "Raccourcisseur d'URL auto-hébergé"
 
-version = "4.2.0~ynh1"
+version = "4.2.1~ynh1"
 
 maintainers = []
 
@@ -16,7 +16,8 @@ userdoc = "https://shlink.io/documentation/"
 code = "https://github.com/shlinkio/shlink"
 
 [integration]
-yunohost = ">= 11.2"
+yunohost = ">= 11.2.30"
+helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
 ldap = false
@@ -43,8 +44,8 @@ ram.runtime = "50M"
         autoupdate.asset = "^shlink-web-client_.*_dist.zip$"
 
         [resources.sources.main]
-        url = "https://github.com/shlinkio/shlink/releases/download/v4.2.0/shlink4.2.0_php8.2_dist.zip"
-        sha256 = "155d8e4af790ee16ce6952661842775f8d7c0351eb58bc82916b5c2eecb971f8"
+        url = "https://github.com/shlinkio/shlink/releases/download/v4.2.1/shlink4.2.1_php8.2_dist.zip"
+        sha256 = "106adbf68d322d6de32bda0a7d1e351e29b1239c9593d75b2fec95b9552f7bf6"
         autoupdate.strategy = "latest_github_release"
         autoupdate.upstream = "https://github.com/shlinkio/shlink"
         autoupdate.asset = "^shlink.*_php8.2_dist.zip$"
@@ -53,6 +54,7 @@ ram.runtime = "50M"
     [resources.system_user]
 
     [resources.install_dir]
+    group = "www-data:r-x"
 
     [resources.permissions]
     main.url = "/"
@@ -62,7 +64,7 @@ ram.runtime = "50M"
     api.protected = true
 
     [resources.apt]
-    packages = "postgresql php8.2-apcu php8.2-pgsql php8.2-gd php8.2-curl php8.2-intl php8.2-gmp php8.2-xml"
+    packages = "postgresql, php8.2-apcu, php8.2-pgsql, php8.2-gd, php8.2-curl, php8.2-intl, php8.2-gmp, php8.2-xml"
 
     [resources.database]
     type = "postgresql"
