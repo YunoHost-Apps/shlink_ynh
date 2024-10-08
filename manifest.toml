@@ -5,7 +5,7 @@ name = "Shlink"
 description.en = "Self-hosted URL shortener"
 description.fr = "Raccourcisseur d'URL auto-hébergé"
 
-version = "4.2.1~ynh1"
+version = "4.2.1~ynh2"
 
 maintainers = []
 
@@ -37,8 +37,8 @@ ram.runtime = "50M"
 [resources]
     [resources.sources]
         [resources.sources.front]
-        url = "https://github.com/shlinkio/shlink-web-client/releases/download/v4.1.2/shlink-web-client_4.1.2_dist.zip"
-        sha256 = "f704cddb064c6f09c8e11e24a43924bbb5a63e17498d985d3b488611769987bc"
+        url = "https://github.com/shlinkio/shlink-web-client/releases/download/v4.2.0/shlink-web-client_4.2.0_dist.zip"
+        sha256 = "0ec5dca5a7bfa48041817fbe82ed90a47746148849d70fa425a064efdd8ae439"
         autoupdate.strategy = "latest_github_release"
         autoupdate.upstream = "https://github.com/shlinkio/shlink-web-client"
         autoupdate.asset = "^shlink-web-client_.*_dist.zip$"
