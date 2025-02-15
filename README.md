@@ -22,7 +22,7 @@ Shlink is a self-hosted URL shortener which provides both a REST and a CLI inter
 
 Additionally, there's also an official Shlink web client which, by making use of Shlink's REST API, provides a beautiful web UI to handle multiple Shlink instances.
 
-**Shipped version:** 4.4.2~ynh1
+**Shipped version:** 4.4.3~ynh1
 
 ## Screenshots
 
